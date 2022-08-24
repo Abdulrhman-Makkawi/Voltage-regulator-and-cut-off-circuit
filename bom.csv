@@ -1,0 +1,12 @@
+﻿Name,Quantity,Component
+"U1",1," 5V Regulator [LM7805]"
+"D1, D3",2," Diode"
+"C1, C2",2,"220 uF Capacitor"
+"D2, D4",2,"Red LED"
+"R1",1,"220 Ω Resistor"
+"U3",1," 3.3V Regulator [LD1117V33]"
+"C3",1,"10 uF Capacitor"
+"C4",1,"100 nF Capacitor"
+"R2",1,"120 Ω Resistor"
+"P1",1,"30 , 5  Power Supply"
+"Meter1, Meter2",2,"Voltage Multimeter"
