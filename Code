@@ -1,0 +1,66 @@
+#include <Servo.h>
+Servo servo1;
+Servo servo2;
+Servo servo3;
+Servo servo4;
+int pos=0;
+void setup()
+{
+  pinMode(0,INPUT);
+  pinMode(4,OUTPUT);
+  servo1.attach(8);
+  
+  pinMode(1,INPUT);
+  pinMode(5,OUTPUT);
+  servo2.attach(9);
+  
+  pinMode(2,INPUT);
+  pinMode(6,OUTPUT);
+  servo3.attach(10);
+  
+  pinMode(3,INPUT);
+  pinMode(7,OUTPUT);
+  servo4.attach(11);
+}
+
+void loop()
+{
+  if(digitalRead(0)==LOW){
+    digitalWrite(4, HIGH);
+    servo1.write(180);
+  }
+  else if(digitalRead(0)==HIGH){
+    servo1.write(0);
+    delay (2000);
+    digitalWrite(4, LOW);
+  }
+  
+if(digitalRead(1)==LOW){
+    digitalWrite(5, HIGH);
+    servo2.write(180);
+  }
+  else if(digitalRead(1)==HIGH){
+    servo2.write(0);
+    delay (2000);
+    digitalWrite(5, LOW);
+  }
+if(digitalRead(2)==LOW){
+    digitalWrite(6, HIGH);
+    servo3.write(180);
+  }
+  else if(digitalRead(2)==HIGH){
+    servo3.write(0);
+    delay (2000);
+    digitalWrite(6, LOW);
+  }
+if(digitalRead(3)==LOW){
+    digitalWrite(7, HIGH);
+    servo4.write(180);
+  }
+  else if(digitalRead(3)==HIGH){
+    servo4.write(0);
+    delay (2000);
+    digitalWrite(7, LOW);
+  }
+
+}
